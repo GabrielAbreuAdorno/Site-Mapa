@@ -11,27 +11,32 @@
         <form action="">
             <h1>Formulario </h1>
             <div class="input-box">
-                <input type="number" placeholder="Mesas" required>
+                <input type="text" placeholder="Usuario" required>
                 
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Cadeiras" required>
+                <input type="text" placeholder="Nome" required>
                 
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Pc" required>
+                <input type="text" placeholder="Tipo" required>
                 
             </div>
             <div class="input-box">
-                <input type="text" placeholder="Projetor" required>
+                <input type="number" placeholder="Preço" required>
                 
             </div>
-            <div class="input-box">
-                <input type="text" placeholder="Ar condicionado" required>
-                
-            </div>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="imageUpload" class="upload-button">Selecione uma imagem</label>
+                <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+                <p class="file-name" id="fileName">Nenhum arquivo selecionado</p>
+            </form>
+            <button type="submit" class="btn">Enviar</button>
+            <a href="../index.html">Voltar</a>
         </form>
-    </body>
+    </div>
+    <script src="../src/formulario.js"></script>
+</body>
 </html>
 
         
